@@ -1,22 +1,20 @@
 # flowplayer_hls_flash
+
+基于flowplayer的在线电视直播m3u8播放器
+
 在线hls  m3u8播放器flash
-
-
 为了方便修改，就没多写
 
-第41、42的m3u8的地址为直播地址可以修改
 
+
+第41、42的m3u8的地址为直播地址可以修改
 第41行的url、第42行的ipadurl
 clip: {
 	accelerated: true,
 	url: "http://125.88.92.166:30001/PLTV/88888956/224/3221227698/1.m3u8",
     ipadUrl: "http://125.88.92.166:30001/PLTV/88888956/224/3221227698/1.m3u8",
 
-
-
-
 更多直播源：https://github.com/sysorem/m3u8-playlist-for-hls
-
 
 
 
