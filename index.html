@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html style="height: 100%">
+  <head>
+    <title>µÁ ”÷±≤•</title>
+<meta http-equiv="charset" content="utf-8">
+    <script type="text/javascript" src="flowplayer-3.2.12.min.js"></script>
+    <script type="text/javascript" src="http://cdn.bootcss.com/jquery/3.1.0/jquery.min.js"></script>
+  </head>
+  
+  <body id="plugins_httpstreamingm3u8" style="height: 100%;margin: 0">
+    <div id="wrap" style="height: 100%">
+      <div id="content" style="height: 100%">
+        <script type="text/javascript" src="flowplayer.ipad-3.2.12.min.js"></script>
+        <div style="width: 100%; height: 100%;">
+          <!-- player container-->
+          <a style="display: block; width: 100%; height: 100%;" id="player"></a>
+          <!-- Flowplayer installation and configuration -->
+          <script type="text/javascript">flowplayer("player", "flowplayer.swf", {
+              // configure the required plugins
+              wmode: 'direct',
+              plugins: {
+                httpstreaming: {
+                  url: 'flashlsFlowPlayer.swf',
+                  hls_debug: false,
+                  hls_debug2: false,
+                  hls_lowbufferlength: 3,
+                  hls_minbufferlength: -1,
+                  hls_maxbufferlength: 60,
+                  hls_startfromlevel: -1,
+                  hls_seekfromlevel: -1,
+                  hls_live_flushurlcache: true,
+                  hls_seekmode: "ACCURATE",
+                  hls_fragmentloadmaxretry: -1,
+                  hls_manifestloadmaxretry: -1,
+                  hls_capleveltostage: false,
+                  hls_maxlevelcappingmode: "downscale"
+                }
+              },
+              clip: {
+                accelerated: true,
+                url: "http://125.88.92.166:30001/PLTV/88888956/224/3221227698/1.m3u8",
+                ipadUrl: "http://125.88.92.166:30001/PLTV/88888956/224/3221227698/1.m3u8",
+                urlResolvers: "httpstreaming",
+                lang: "fr",
+                provider: "httpstreaming",
+                autoPlay: true,
+                autoBuffering: true
+              },
+              log: {
+                level: 'debug',
+                filter: 'org.flowplayer.controller.*'
+              }
+            }).ipad();</script>
+        </div>
+               </div>
+      </div>
+    </div>
+  </body>
+
+</html>
